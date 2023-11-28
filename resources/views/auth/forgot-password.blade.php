@@ -7,6 +7,7 @@
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="{{asset('authen/images/icons/favicon.ico')}}"/>
 <!--===============================================================================================-->
+
 	<link rel="stylesheet" type="text/css" href="{{asset('authen/vendor/bootstrap/css/bootstrap.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('authen/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
@@ -32,16 +33,11 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" method="post" action="{{route('register')}}">
+				<form class="login100-form validate-form" method="post" action="{{route('password.email')}}">
 					@csrf
 					<span class="login100-form-title p-b-43">
 						Forgot Password
 					</span>
-					
-					<div class="inputbox">
-                    Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.
-                    <div>
-                <br>
 
                     <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<input class="input100" type="text" name="email">
